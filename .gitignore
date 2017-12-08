@@ -99,3 +99,9 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# Credentials
+assistant.json
+
+# MacOS
+**.DS_Store
