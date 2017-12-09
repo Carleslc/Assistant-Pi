@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import argparse
-import aiy.audio.say as say
+from aiy.audio import say
 
 def set_args():
     global args
@@ -14,4 +14,5 @@ def set_args():
 
 if __name__ == '__main__':
     set_args()
-    say(args.words, args.lang, args.volume, args.pitch)
+    words = ' '.join(args.words)
+    say(words, args.lang, args.volume, args.pitch)
