@@ -1,0 +1,65 @@
+# Translations for voice-recognizer package
+# Copyright (C) 2017 Carlos Lázaro
+# Carlos Lázaro <lazaro.costa.carles@gmail.com>, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-12-09 23:46+0100\n"
+"PO-Revision-Date: 2017-12-09 21:18+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: assistant.py:50
+msgid "english"
+msgstr "inglés"
+
+#: assistant.py:51
+msgid "spanish"
+msgstr "español"
+
+#: assistant.py:54 assistant.py:152
+msgid "repeat"
+msgstr "repite"
+
+#: assistant.py:55 assistant.py:157
+msgid "change language to"
+msgstr "cambia el idioma a"
+
+#: assistant.py:56
+msgid "shutdown"
+msgstr "apagar"
+
+#: assistant.py:58
+msgid "goodbye"
+msgstr "adiós"
+
+#: assistant.py:80
+msgid "Hello"
+msgstr "Hola"
+
+#: assistant.py:107
+msgid "Sorry, I did not understand you."
+msgstr "Lo siento, no te he entendido."
+
+#: assistant.py:128
+msgid "Goodbye!"
+msgstr "Adiós!"
+
+#: assistant.py:162
+msgid "Language set to "
+msgstr "El idioma se ha cambiado a "
+
+#: assistant.py:165
+msgid "Language "
+msgstr "El idioma "
+
+#: assistant.py:165
+msgid " is not supported"
+msgstr " no está soportado"

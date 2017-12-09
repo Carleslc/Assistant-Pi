@@ -14,5 +14,11 @@ class _ExtendedCloudSpeechRecognizer(aiy.cloudspeech._CloudSpeechRecognizer):
         wrapper.get_phrases = get_phrases
         self._request.add_phrases(wrapper)
 
+    def expected_phrases(self):
+        return list(self._request._phrases)
+
+    def reset_expected_phrases(self):
+        self._request._phrases = []
+
 def get_recognizer(credentials_file=aiy.cloudspeech.CLOUDSPEECH_CREDENTIALS_FILE):
     return _ExtendedCloudSpeechRecognizer(credentials_file)
