@@ -25,6 +25,8 @@ from google.assistant.library.event import EventType
 # TODO: Manga Command (send to kindle)
 
 DEFAULT_LANGUAGE = 'en-US'
+DEFAULT_VOLUME = 2
+DEFAULT_PITCH = 130
 
 # Lazy-initialized variables
 status_ui = None
@@ -67,6 +69,12 @@ def set_language(lang_code):
     info('Commands Available:')
     info(', '.join(recognizer.expected_phrases()))
 
+def set_audio(volume, pitch):
+    if volume:
+        aiy.audio.set_tts_volume(volume)
+    if pitch:
+        aiy.audio.set_tts_pitch(pitch)
+
 def set_args():
     global args
     parser = argparse.ArgumentParser(description="Custom Assistant")
@@ -85,6 +93,7 @@ def start():
 
 def setup():
     set_language(DEFAULT_LANGUAGE)
+    set_audio(DEFAULT_VOLUME, DEFAULT_PITCH)
 
     if args.with_google:
         info('Google Assistant is enabled')
