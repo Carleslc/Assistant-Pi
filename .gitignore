@@ -100,8 +100,9 @@ ENV/
 # mypy
 .mypy_cache/
 
-# Credentials
+# Credentials (Google)
 assistant.json
+cloud_speech.json
 
 # MacOS
 **.DS_Store
